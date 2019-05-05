@@ -47,7 +47,7 @@ class BukuController extends Controller
 
             Buku::create($request->all());
             return redirect()->route('buku.index')
-                            ->with('success' , 'Data Buku Berhasil Ditambahkan :)');
+                            ->with('success' , 'Data Buku Berhasil Ditambahkan :v');
 
     }
 
@@ -97,7 +97,7 @@ class BukuController extends Controller
         $book->tahunTerbit = $request->get('tahunTerbit');
         $book->penerbit = $request->get('penerbit');
         $book->save();
-        return redirect()->route('buku.index')->with('success' , 'Data Buku Berhasil Diupdate :)');
+        return redirect()->route('buku.index')->with('success' , 'Data Buku Berhasil Diupdate :v');
     }
 
     /**
@@ -110,6 +110,6 @@ class BukuController extends Controller
     {
         $book = Buku::find($id);
         $book->delete();
-        return redirect()->route('buku.index')->with('success' , 'Data Buku Berhasil Dihapus :)');
+        return redirect()->route('buku.index')->with('success' , 'Data Buku Berhasil Dihapus :v');
     }
 }
