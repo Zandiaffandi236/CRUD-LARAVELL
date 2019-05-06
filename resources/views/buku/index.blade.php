@@ -18,7 +18,7 @@
 
         @endif
 
-        <table class="table table-hover table-sm">
+        <table class="table table-hover table-md">
             <tr>
                 <th width="50px"><b>No.</b></th>
                 <th width="150px"><b>Judul</b></th>
