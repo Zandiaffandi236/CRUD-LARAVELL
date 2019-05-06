@@ -16,7 +16,7 @@ class BukuController extends Controller
     {
         $book = Buku::latest()->paginate(8);
         return view('buku.index' , compact('book'))
-                    ->with('i', (request()->input('page',1)-1)*5);
+                    ->with('i', (request()->input('page',1)-1)*8);
     }
 
     /**
