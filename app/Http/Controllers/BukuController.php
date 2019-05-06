@@ -41,7 +41,7 @@ class BukuController extends Controller
             "judul"         =>  "required",
             "pengarang"     =>  "required",
             "kategori"      =>  "required",
-            "tahunTerbit"   =>  "required",
+            "tahunTerbit"   =>  "required|numeric",
             "penerbit"      =>  "required"
         ]);
 
@@ -87,7 +87,7 @@ class BukuController extends Controller
             "judul"         =>  "required",
             "pengarang"     =>  "required",
             "kategori"      =>  "required",
-            "tahunTerbit"   =>  "required",
+            "tahunTerbit"   =>  "required|numeric",
             "penerbit"      =>  "required"
         ]);
         $book = Buku::find($id);
