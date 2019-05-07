@@ -4,8 +4,11 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-10">
+            <div class="col-md-9">
                 <h3>Daftar Buku</h3>
+            </div>
+            <div class="col-sm-1">
+                <a class="btn btn-sm btn-primary" href="{{ url('') }}">Welcome</a>
             </div>
             <div class="col-sm-2">
                 <a class="btn btn-sm btn-success" href="{{ route('buku.create') }}">Tambah Data Buku</a>

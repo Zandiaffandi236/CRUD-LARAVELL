@@ -14,7 +14,8 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    You are logged in! <br>
+                    <a class="btn btn-md btn-success" href="{{ route('buku.index') }}">Klik disini untuk masuk</a>
                 </div>
             </div>
         </div>
